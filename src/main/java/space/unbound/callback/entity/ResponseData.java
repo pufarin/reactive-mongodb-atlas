@@ -1,6 +1,6 @@
 package space.unbound.callback.entity;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -24,7 +24,7 @@ public class ResponseData {
 
     private String call_back;
 
-    private Timestamp timeStamp;
+    private Date timeStamp;
 
     private String eventName;
 
