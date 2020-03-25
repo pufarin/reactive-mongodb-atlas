@@ -1,5 +1,6 @@
 package space.unbound.callback.entity;
-import javax.validation.constraints.NotBlank;
+
+import java.sql.Timestamp;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -19,10 +20,15 @@ import lombok.ToString;
 public class ResponseData {
 
     @Id
-    private String id;
+    private String uuid;
 
-    @NotBlank
-    private String theData;
+    private String call_back;
+
+    private Timestamp timeStamp;
+
+    private String eventName;
+
+    private String parameter;
 
 }
 
